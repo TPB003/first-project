@@ -1,0 +1,291 @@
+package com.entity.model;
+
+import com.entity.XufeitixingEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 续费提醒
+ * 接收传参的实体类  
+ *（实际开发中配合移动端接口开发手动去掉些没用的字段， 后端一般用entity就够用了） 
+ * 取自ModelAndView 的model名称
+ * @author 
+ * @email 
+ * @date 2022-01-18 15:06:48
+ */
+public class XufeitixingModel  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 车位名称
+	 */
+	
+	private String cheweimingcheng;
+		
+	/**
+	 * 车位类型
+	 */
+	
+	private String cheweileixing;
+		
+	/**
+	 * 位置
+	 */
+	
+	private String weizhi;
+		
+	/**
+	 * 租赁类型
+	 */
+	
+	private String zulinleixing;
+		
+	/**
+	 * 续费金额
+	 */
+	
+	private Integer xufeijine;
+		
+	/**
+	 * 备注
+	 */
+	
+	private String beizhu;
+		
+	/**
+	 * 提醒时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date tixingshijian;
+		
+	/**
+	 * 账号
+	 */
+	
+	private String zhanghao;
+		
+	/**
+	 * 姓名
+	 */
+	
+	private String xingming;
+		
+	/**
+	 * 是否审核
+	 */
+	
+	private String sfsh;
+		
+	/**
+	 * 审核回复
+	 */
+	
+	private String shhf;
+		
+	/**
+	 * 是否支付
+	 */
+	
+	private String ispay;
+				
+	
+	/**
+	 * 设置：车位名称
+	 */
+	 
+	public void setCheweimingcheng(String cheweimingcheng) {
+		this.cheweimingcheng = cheweimingcheng;
+	}
+	
+	/**
+	 * 获取：车位名称
+	 */
+	public String getCheweimingcheng() {
+		return cheweimingcheng;
+	}
+				
+	
+	/**
+	 * 设置：车位类型
+	 */
+	 
+	public void setCheweileixing(String cheweileixing) {
+		this.cheweileixing = cheweileixing;
+	}
+	
+	/**
+	 * 获取：车位类型
+	 */
+	public String getCheweileixing() {
+		return cheweileixing;
+	}
+				
+	
+	/**
+	 * 设置：位置
+	 */
+	 
+	public void setWeizhi(String weizhi) {
+		this.weizhi = weizhi;
+	}
+	
+	/**
+	 * 获取：位置
+	 */
+	public String getWeizhi() {
+		return weizhi;
+	}
+				
+	
+	/**
+	 * 设置：租赁类型
+	 */
+	 
+	public void setZulinleixing(String zulinleixing) {
+		this.zulinleixing = zulinleixing;
+	}
+	
+	/**
+	 * 获取：租赁类型
+	 */
+	public String getZulinleixing() {
+		return zulinleixing;
+	}
+				
+	
+	/**
+	 * 设置：续费金额
+	 */
+	 
+	public void setXufeijine(Integer xufeijine) {
+		this.xufeijine = xufeijine;
+	}
+	
+	/**
+	 * 获取：续费金额
+	 */
+	public Integer getXufeijine() {
+		return xufeijine;
+	}
+				
+	
+	/**
+	 * 设置：备注
+	 */
+	 
+	public void setBeizhu(String beizhu) {
+		this.beizhu = beizhu;
+	}
+	
+	/**
+	 * 获取：备注
+	 */
+	public String getBeizhu() {
+		return beizhu;
+	}
+				
+	
+	/**
+	 * 设置：提醒时间
+	 */
+	 
+	public void setTixingshijian(Date tixingshijian) {
+		this.tixingshijian = tixingshijian;
+	}
+	
+	/**
+	 * 获取：提醒时间
+	 */
+	public Date getTixingshijian() {
+		return tixingshijian;
+	}
+				
+	
+	/**
+	 * 设置：账号
+	 */
+	 
+	public void setZhanghao(String zhanghao) {
+		this.zhanghao = zhanghao;
+	}
+	
+	/**
+	 * 获取：账号
+	 */
+	public String getZhanghao() {
+		return zhanghao;
+	}
+				
+	
+	/**
+	 * 设置：姓名
+	 */
+	 
+	public void setXingming(String xingming) {
+		this.xingming = xingming;
+	}
+	
+	/**
+	 * 获取：姓名
+	 */
+	public String getXingming() {
+		return xingming;
+	}
+				
+	
+	/**
+	 * 设置：是否审核
+	 */
+	 
+	public void setSfsh(String sfsh) {
+		this.sfsh = sfsh;
+	}
+	
+	/**
+	 * 获取：是否审核
+	 */
+	public String getSfsh() {
+		return sfsh;
+	}
+				
+	
+	/**
+	 * 设置：审核回复
+	 */
+	 
+	public void setShhf(String shhf) {
+		this.shhf = shhf;
+	}
+	
+	/**
+	 * 获取：审核回复
+	 */
+	public String getShhf() {
+		return shhf;
+	}
+				
+	
+	/**
+	 * 设置：是否支付
+	 */
+	 
+	public void setIspay(String ispay) {
+		this.ispay = ispay;
+	}
+	
+	/**
+	 * 获取：是否支付
+	 */
+	public String getIspay() {
+		return ispay;
+	}
+			
+}
